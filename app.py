@@ -33,5 +33,5 @@ if st.button("Predict"):
 
     # Predict
     prediction = model.predict(input_scaled)
-    result = "⚠️ High Risk of Heart Failure" if prediction[0] == 1 else "✅ Low Risk of Heart Failure"
+    result = "⚠️ High Risk of Heart Failure" if prediction[0] == 0 else "✅ Low Risk of Heart Failure"
     st.success(f"Prediction: {result}")
